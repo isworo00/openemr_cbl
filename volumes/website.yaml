@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
-metadata:  
+metadata:
   name: websitevolume
 spec:
-  accessModes:
-  - ReadWriteOnce
+  storageClassName: longhorn  # implement longhorn
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
-      storage: 10Gi
+      storage: 10Gi 

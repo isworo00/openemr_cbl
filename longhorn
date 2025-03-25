@@ -1,0 +1,6 @@
+# Add the Helm repo and install (single command)
+helm repo add longhorn https://charts.longhorn.io && helm repo update
+helm install longhorn longhorn/longhorn \
+  --namespace longhorn-system \
+  --create-namespace \
+  --version 1.5.1  # Latest stable as of 2024

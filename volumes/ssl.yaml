@@ -3,9 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: sslvolume
 spec:
-  accessModes:
-  - ReadWriteOnce
+  storageClassName: longhorn  # implement longhorn
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 1Gi
-      
